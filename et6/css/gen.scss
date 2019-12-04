@@ -1,0 +1,380 @@
+// Header start
+#header{
+    z-index: 1000;
+    width: 100%;
+    position: fixed;
+    padding: 30px;
+    background: transparent;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    .menu{
+        li{
+            margin: 0 20px;
+            position: relative;
+            &::before{
+                content:'';
+                position: absolute;
+                background:rgb(233, 32, 79);
+                width: 0;
+                height: 2px;
+                left: 0;
+                top: 100%;
+                transition: .3s;
+            }
+            &:hover::before{
+                width: 50%;
+            }
+        }
+    }
+}
+// Header end
+// Digital start
+#digital{
+    position: relative;
+    background: url(../photo/hero_02.jpg);
+    background-color: black;
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 130vh;
+    .digital-top{
+        position: absolute;
+        color: #fff;
+        top: 20%;
+        div{
+            border: solid 1.5px rgb(233, 32, 79);
+            width: 80px;
+        }
+        h1{
+            font-size: 80px;
+            margin-bottom: 30px;
+            margin-top: 40px;
+        }
+        button{
+            z-index: 10;
+            position: relative;
+            padding: 20px 50px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 15px;
+            background: transparent;
+            border-color: rgb(233, 32, 79);
+            &::before{
+                z-index: -1;
+                content:'';
+                position: absolute;
+                height: 100%;
+                width: 0;
+                left: 0;
+                top: 0;
+                background: rgb(233, 32, 79);
+                transition: .4s;
+            }
+            &:hover::before{
+                width: 100%;
+            }
+        }
+    }
+    .col-lg-4{
+        position: relative;
+        z-index: 700;
+        background: rgb(31, 30, 30);
+        height: 350px;
+        margin: 0 15px;
+        margin-top: 632px;
+        transition: .6s;
+        &:hover{
+            background: rgb(233, 32, 79);
+            .all-digi{
+                i{
+                    color: #fff;
+                }
+                div{
+                    border-color: #fff;
+                }
+            }
+        }
+        .all-digi{
+            position: absolute;
+            top: 20%;
+            left: 40px;
+            color: #fff;
+            h1{
+                margin-bottom: 10px;
+                font-weight: bold;
+            }
+            div{
+                border: solid 1px rgb(233, 32, 79);
+                width: 50px;
+                margin-bottom: 20px;
+            }
+            i{
+                margin-bottom: 40px;
+                color: rgb(233, 32, 79);
+            }
+            p{
+                font-weight: 100;
+                line-height: 1.6;
+            }
+        }
+    }
+}
+// Digital end
+// Services start
+#services{
+    position: relative;
+    height: 300px;
+    background: rgb(19, 18, 18);
+    .services-top{
+        position: absolute;
+        top: 120px;
+        div{
+            border: solid 1px rgb(233, 32, 79);
+            width: 50px;
+        }
+        h1{
+            margin-bottom: 10px;
+            margin-top: 30px;
+            font-size: 50px;
+            font-weight: bold;
+            color: #fff;
+        }
+        h5{
+            color: rgb(233, 32, 79);
+        }
+    }
+}
+// Services end
+// Media start
+#media{
+    height: 85vh;
+    color: #fff;
+    background: rgb(19, 18, 18);
+    .end{
+        margin-top: 80px;
+        border-left: solid rgb(233, 32, 79);
+        height: 80px;
+        margin-left: 50%;
+    }
+    .media-top{
+        .col-lg-4{
+            position: relative;
+            background:rgb(29, 28, 28);
+            color: #fff;
+            text-align: center;
+            margin: 20px 15px;
+            padding: 50px 0;
+            transition: .3s;
+            h1{
+                position: absolute;
+                left: 10%;
+                top: 40%;
+                transform: translateX(0);
+                transition: .2s;
+            }
+            i{
+                position: absolute;
+                left: 80%;
+                top: 40%;
+            }
+            .hidden{
+                i{
+                    left: 5px;
+                    top: 10px;
+                    visibility: hidden;
+                    transition: .2s;
+                }
+            }
+            &:hover{
+                background:rgb(233, 32, 79);
+                h1{
+                    transform: translateX(30%);
+                }
+                .hidden{
+                    i{
+                        visibility: visible;
+                        font-size: 70px;
+                    }
+                }
+            }
+        }
+    }
+    .media-middle{
+                .col-lg-4{
+            position: relative;
+            background: rgb(29, 28, 28);
+            color: #fff;
+            text-align: center;
+            margin: 20px 15px;
+            padding: 50px 0;
+            transition: .3s;
+            h1{
+                position: absolute;
+                left: 10%;
+                top: 40%;
+                transform: translateX(0);
+                transition: .2s;
+            }
+            i{
+                position: absolute;
+                left: 80%;
+                top: 40%;
+            }
+            .hidden{
+                i{
+                    left: 5px;
+                    top: 10px;
+                    visibility: hidden;
+                    transition: .2s;
+                }
+            }
+            &:hover{
+                background:rgb(233, 32, 79);
+                h1{
+                    transform: translateX(30%);
+                }
+                .hidden{
+                    i{
+                        visibility: visible;
+                        font-size: 70px;
+                    }
+                }
+            }
+        }
+    }
+    .media-bottom{
+        .col-lg-4{
+            position: relative;
+            background: rgb(29, 28, 28);
+            color: #fff;
+            text-align: center;
+            margin: 20px 15px;
+            padding: 50px 0;
+            transition: .3s;
+            h1{
+                position: absolute;
+                left: 10%;
+                top: 40%;
+                transform: translateX(0);
+                transition: .2s;
+            }
+            i{
+                position: absolute;
+                left: 80%;
+                top: 40%;
+            }
+            .hidden{
+                i{
+                    left: 5px;
+                    top: 10px;
+                    visibility: hidden;
+                    transition: .2s;
+                }
+            }
+            &:hover{
+                background:rgb(233, 32, 79);
+                h1{
+                    transform: translateX(30%);
+                }
+                .hidden{
+                    i{
+                        visibility: visible;
+                        font-size: 70px;
+                    }
+                }
+            }
+        }
+    }
+}
+// Media end
+// Works start
+#works{
+    background: rgb(19, 18, 18);
+    color: #fff;
+    height: 25vh;
+    position: relative;
+    .txt{
+        div{
+            border: solid 1px rgb(233, 32, 79);
+            width: 40px;
+        }
+        h1{
+            margin-top: 40px;
+            margin-bottom: 10px;
+            font-size: 60px;
+        }
+        h4{
+            font-size: 15px;
+            color: rgb(233, 32, 79);
+        }
+    }
+    button{
+        margin-left: 70%;
+        z-index: 10;
+        padding: 15px 40px;
+        position: relative;
+        right: 10%;
+        top: 30px;
+        background: transparent;
+        border-color: rgb(233, 32, 79);
+        color: #fff;
+        font-size: 20px;
+        &::before{
+            z-index: -1;
+            content:'';
+            position: absolute;
+            height: 100%;
+            width: 0;
+            left: 0;
+            top: 0;
+            background: rgb(233, 32, 79);
+            transition: .3s;
+        }
+        &:hover::before{
+            width: 100%;
+        }
+    }
+}
+// Works end
+// Product start
+#product{
+    height: 70vh;
+    background: rgb(19, 18, 18);
+    .all-product{
+        position: relative;
+        margin: 0 10px;
+        clip-path: inset(0);
+        transition: .4s;
+        img{
+            transition: .4s;
+            filter: grayscale(100%);
+            height: 400px;
+        }
+        .product-box{
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000;
+            opacity: 0;
+            top: 0;
+            left: 0;
+            color: #fff;
+        }
+        &:hover{
+            clip-path: inset(20px);
+            .product-box{
+                opacity: .7;
+            }
+            img{
+                filter: grayscale(0);
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+// Product end
